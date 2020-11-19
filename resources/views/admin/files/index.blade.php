@@ -2,7 +2,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h3 class="page-title" style="color: #3c8dbc">Хадгалсан файлууд</h3>
+{{-- <h3 class="page-title" style="color: #3c8dbc">Хадгалсан файлууд</h3> --}}
 {{-- <h3 class="page-title">@lang('quickadmin.files.title')</h3> --}}
     @can('file_create')
         <p>
@@ -34,8 +34,8 @@
 
 
     <div class="panel panel-default">
-        <div class="panel-heading">
-            Жагсаалт
+        <div class="panel-heading" style="color: #3c8dbc">
+            Хадгалсан файлууд
         </div>
 
         <div class="panel-body table-responsive">

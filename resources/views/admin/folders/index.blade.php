@@ -26,8 +26,8 @@
         </p>
     @endcan
     <div class="panel panel-default">
-        <div class="panel-heading">
-            Жагсаалт
+        <div class="panel-heading" style="color: #3c8dbc">
+            Хадгалсан хавтаснууд
         </div>
 
         <div class="panel-body table-responsive">
