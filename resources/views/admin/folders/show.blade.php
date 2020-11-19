@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h3 class="page-title"><label>Хавтасны нэр : </label> {{$folder->name}}</h3>
+    <h3 class="page-title" style="color: #3c8dbc"><label>Хавтасны нэр : </label> {{$folder->name}}</h3>
     <p>
 
         @if (Auth::getUser()->role_id == 2 && $userFilesCount > 5)

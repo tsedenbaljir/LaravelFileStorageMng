@@ -2,7 +2,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h3 class="page-title">Үндсэн эрхнүүд</h3>
+    <h3 class="page-title" style="color: #3c8dbc">Үндсэн эрхнүүд</h3>
     @can('role_create')
     <p>
         <a href="{{ route('admin.roles.create') }}" class="btn btn-success">Шинээр эрх үүсгэх</a>

@@ -38,9 +38,9 @@ class FoldersController extends Controller
             if (! Gate::allows('folder_delete')) {
                 return abort(401);
             }
-            $folders = Folder::onlyTrashed()->get();
+            $folders = Folder::orderBy('updated_at', 'desc')->onlyTrashed()->get();
         } else {
-            $folders = Folder::all();
+            $folders = Folder::orderBy('updated_at', 'desc')->get();
         }
 
         return view('admin.folders.index', compact('folders','files'));

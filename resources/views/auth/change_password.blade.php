@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-	<h3 class="page-title">Нууц үгээ солих цонх</h3>
+	{{-- <h3 class="page-title" style="color: #3c8dbc">Нууц үгээ солих цонх</h3> --}}
 
 	@if(session('success'))
 		<!-- If password successfully show message -->
@@ -14,8 +14,8 @@
 		{!! Form::open(['method' => 'PATCH', 'route' => ['auth.change_password']]) !!}
 		<!-- If no success message in flash session show change password form  -->
 		<div class="panel panel-default">
-			<div class="panel-heading">
-				Солих
+			<div class="panel-heading" style="color: #3c8dbc">
+				Нууц үгээ солих цонх
 			</div>
 
 			<div class="panel-body">

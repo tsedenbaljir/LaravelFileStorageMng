@@ -40,9 +40,9 @@ class FilesController extends Controller
             if (!Gate::allows('file_delete')) {
                 return abort(401);
             }
-            $files = File::onlyTrashed()->get();
+            $files = File::orderBy('updated_at', 'desc')->onlyTrashed()->get();
         } else {
-            $files = File::all();
+            $files = File::orderBy('updated_at', 'desc')->get();
         }
         $user = Auth::getUser();
         $userFilesCount = File::where('created_by_id', $user->id)->count();

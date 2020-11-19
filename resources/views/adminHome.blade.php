@@ -3,7 +3,7 @@
 @section('content')
     <div class="row">
         <div class="panel panel-default">
-        <div class="panel-heading"><h3>Удирдах самбар</h3></div>
+        <div class="panel-heading" style="color: #3c8dbc">Удирдах самбар</div>
         <div class="panel-body">
     <div class="panel panel-default">
         <div class="panel-heading">
@@ -85,10 +85,10 @@
     </div>
     <style>
         .folder{
-            border:1px solid gray;
             margin:15px;
             padding: 5px;
             border-radius: 5px;
+            border:1px solid gray;
         }
     </style>
                     {{--  --}}

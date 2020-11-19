@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-    <h3 class="page-title">Файл</h3>
+    {{-- <h3 class="page-title" style="color: #3c8dbc">Файл</h3> --}}
     {!! Form::open(['method' => 'POST', 'route' => ['admin.files.store'], 'files' => true,]) !!}
 
     <div class="panel panel-default">
-        <div class="panel-heading">
-            Шинээр нэмэх
+        <div class="panel-heading" style="color: #3c8dbc">
+            Файл нэмэх
             {{-- @lang('quickadmin.qa_create') --}}
         </div>
 
@@ -50,7 +50,7 @@
         </div>
     </div>
 
-    {!! Form::submit(trans('Хадгалах'), ['class' => 'btn btn-danger', 'id' => 'submitBtn', 'disabled']) !!}
+    {!! Form::submit(trans('Хадгалах'), ['class' => 'btn btn-success', 'id' => 'submitBtn', 'disabled']) !!}
     {!! Form::close() !!}
 @stop
 

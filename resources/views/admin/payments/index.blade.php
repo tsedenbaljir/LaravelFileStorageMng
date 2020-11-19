@@ -2,7 +2,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h3 class="page-title">@lang('quickadmin.payments.title')</h3>
+    <h3 class="page-title" style="color: #3c8dbc">@lang('quickadmin.payments.title')</h3>
     @can('payment_create')
     <p>
     </p>
