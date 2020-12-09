@@ -85,7 +85,6 @@
                                 bucket: $this.data('bucket'),
                                 file_key: $this.data('filekey'),
                                 _token: '{{ csrf_token() }}'
-
                             },
 
                             add: function (e, data) {
@@ -108,7 +107,6 @@
                         bucket: $this.data('bucket'),
                         file_key: $this.data('filekey'),
                         _token: '{{ csrf_token() }}'
-
                     },
 
                     add: function (e, data) {
